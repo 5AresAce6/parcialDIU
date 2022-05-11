@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="saludos.html">Saludos</a>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-7 mt-4">
+                        <div id="saludos" style="display: block;">
+
+                        </div>
+                    </div>
+                    <div class="col-md-5 mt-4 ">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Saludos</h5>
+                                        <!--Aquí va el formulario-->
+                                        <form role="form">
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">
+                                                    Nombre
+                                                </label>
+                                                <input type="text" class="form-control" id="nombre" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">
+                                                    Texto del saludo
+                                                </label>
+                                                <textarea id="texto_saludo" cols="30" rows="10" class="form-control"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <br>
+                                                <input type="submit" value="Registrar" class="btn btn-primary" runat="server" onclick="registrarSaludo()" id="submitButton" />
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/saludos.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

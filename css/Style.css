@@ -1,0 +1,220 @@
+*{
+
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+
+    background: rgb(197, 185, 185);
+}
+#espacioLetra{
+
+    margin: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid #eee;
+}
+#Titulo{
+
+    float: left;
+    margin-left: 10px;
+    border-color: 1px solid #eee;
+    padding-bottom: 15px;
+    font-family: 'Koulen', cursive;
+
+}
+#parrafos{
+
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    font-family: 'Roboto Flex';
+}
+#card{
+
+    width: 30%;
+    margin-left: 5px;
+    margin-right: 30px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 5px solid rgb(0, 0, 0);
+
+    float: right;
+}
+#Logotexto{
+
+    font-family: 'Koulen', cursive;
+    padding-left: 30px;
+    padding-right: 30px;        
+    padding-top: 15px;
+    color: transparent;
+    background-image: url(https://media.giphy.com/media/YqhIK6Gbor6CLeloBq/giphy-downsized-large.gif);
+    background-position: top;
+    -webkit-background-clip: text;  
+}
+.historia{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contenido-textos{
+    width: 48%;
+}
+.titulo {
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(273,91%,27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(273,91%,27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+.descripcion{
+    text-align: center;
+    padding: 5px 25px;
+    color: rgb(53, 53, 53);
+}
+
+.card{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+.card__perfil{
+    width: 310px;
+    padding: 20px;
+    box-shadow: 1px 1px 5px rgb(201, 201, 201);
+    border: solid rgba(3, 133, 255, 0) 2px;
+    border-radius: 10px;
+}
+.card__perfil:hover{
+    border: solid rgb(3, 133, 255) 2px;
+}
+.card__perfil:hover img{
+    transform: rotate(0);
+}
+
+.card__nombre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+hr{
+    width: 100%;
+    height: 4px;
+    background: rgb(223, 221, 221);
+    margin: 20px 5px;
+}
+.card__button{
+    text-align: center;
+}
+.enlace{
+    background: rgb(0, 110, 255);
+    padding: 8px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+
+#serviceW{
+    position: relative;
+    top: -400px;
+    right: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 0.3rem;
+    outline: 0;
+    visibility: hidden  ;
+}
